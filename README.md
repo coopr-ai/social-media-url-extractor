@@ -19,7 +19,7 @@ The Social Media URL Extractor is a Python module that extracts social media URL
 
 2. Create and activate a virtual environment:
     python -m venv venv
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+    source venv/bin/activate  # On Windows use venv\Scripts\activate
 
 3. Install the dependencies:
     pip install -r requirements.txt
@@ -32,21 +32,21 @@ The Social Media URL Extractor is a Python module that extracts social media URL
 As a Command-Line Tool
 Run the tool with a URL and an optional configuration file:
 
-extract-social-media-urls https://www.example.com --config=src/social_media_url_extractor/config.yaml
-Enable debug mode for detailed logging:
+extract-social-media-urls https://www.example.com --config=src/social_media_url_extractor/config.yaml  
+Enable debug mode for detailed logging:  
 extract-social-media-urls https://www.example.com --config=src/social_media_url_extractor/config.yaml --debug
 
 # As a Python Module
 Import the module and create an instance of SocialMediaURLExtractor:
 
-from social_media_url_extractor import SocialMediaURLExtractor
-extractor = SocialMediaURLExtractor(config_path='src/social_media_url_extractor/config.yaml')
-urls = extractor.extract_urls('https://www.example.com')
-for platform, links in urls.items():
-    if links:
-        print(f'{platform.capitalize()}:')
-        for link in links:
-            print(f'  - {link}')
+    from social_media_url_extractor import SocialMediaURLExtractor
+    extractor = SocialMediaURLExtractor(config_path='src/social_media_url_extractor/config.yaml')
+    urls = extractor.extract_urls('https://www.example.com')
+    for platform, links in urls.items():
+        if links:
+            print(f'{platform.capitalize()}:')
+            for link in links:
+                print(f'  - {link}')
 
 # Configuration
 The URL patterns for different social media platforms are specified in a YAML configuration file. Here is an example config.yaml:
