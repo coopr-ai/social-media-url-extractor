@@ -1,0 +1,4 @@
+hrequests
+beautifulsoup4
+pyyaml
+click
