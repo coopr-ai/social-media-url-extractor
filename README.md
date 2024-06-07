@@ -14,7 +14,7 @@ The Social Media URL Extractor is a Python module that extracts social media URL
 ## Installation
 
 1. Clone the repository:
-   git clone https://github.com/yourusername/social-media-url-extractor.git
+   git clone https://github.com/yourusername/social-media-url-extractor.git  
    cd social-media-url-extractor
 
 2. Create and activate a virtual environment:
@@ -51,51 +51,52 @@ Import the module and create an instance of SocialMediaURLExtractor:
 # Configuration
 The URL patterns for different social media platforms are specified in a YAML configuration file. Here is an example config.yaml:
 
+```
 patterns:
-  facebook:
-    - "https?://(www\\.)?facebook\\.com/profile\\.php\\?id=[0-9]+/?"
-    - "https?://(www\\.)?facebook\\.com/[a-zA-Z0-9_\\-\\.]+/?"
-    - "https?://(www\\.)?fb\\.com/[a-zA-Z0-9_\\-\\.]+/?"
-  twitter:
-    - "https?://(www\\.)?twitter\\.com/[a-zA-Z0-9_\\-]+/?"
-    - "https?://(www\\.)?x\\.com/[a-zA-Z0-9_\\-]+/?"
-  linkedin:
-    - "https?://(www\\.)?linkedin\\.com/in/[a-zA-Z0-9_\\-]+/?"
-    - "https?://(www\\.)?linkedin\\.com/company/[a-zA-Z0-9_\\-]+/?"
-    - "https?://(www\\.)?linkedin\\.com/school/[a-zA-Z0-9_\\-]+/?"
-  instagram:
-    - "https?://(www\\.)?instagram\\.com/[a-zA-Z0-9_\\-\\.]+/?"
-  youtube:
-    - "https?://(www\\.)?youtube\\.com/[a-zA-Z0-9_\\-]+/?"
-    - "https?://(www\\.)?youtube\\.com/c/[a-zA-Z0-9_\\-]+/?"
-    - "https?://(www\\.)?youtube\\.com/@[a-zA-Z0-9_\\-]+/?"
-  pinterest:
-    - "https?://(www\\.)?pinterest\\.com/[a-zA-Z0-9_\\-]+/?"
-    - "https?://in\\.pinterest\\.com/[a-zA-Z0-9_\\-]+/?"
-  tiktok:
-    - "https?://(www\\.)?tiktok\\.com/@[a-zA-Z0-9_\\-\\.]+/?"
-  reddit:
-    - "https?://(www\\.)?reddit\\.com/user/[a-zA-Z0-9_\\-]+/?"
-    - "https?://(www\\.)?reddit\\.com/r/[a-zA-Z0-9_\\-]+/?"
-  snapchat:
-    - "https?://(www\\.)?snapchat\\.com/add/[a-zA-Z0-9_\\-\\.]+/?"
-  tumblr:
-    - "https?://(www\\.)?[a-zA-Z0-9_\\-]+\\.tumblr\\.com/?"
-  medium:
-    - "https?://(www\\.)?medium\\.com/@[a-zA-Z0-9_\\-\\.]+/?"
-  github:
-    - "https?://(www\\.)?github\\.com/[a-zA-Z0-9_\\-\\.]+/?"
-  flickr:
-    - "https?://(www\\.)?flickr\\.com/photos/[a-zA-Z0-9_\\-]+/?"
-  vk:
-    - "https?://(www\\.)?vk\\.com/[a-zA-Z0-9_\\-]+/?"
-  vimeo:
-    - "https?://(www\\.)?vimeo\\.com/[a-zA-Z0-9_\\-]+/?"
-  dailymotion:
-    - "https?://(www\\.)?dailymotion\\.com/[a-zA-Z0-9_\\-]+/?"
-  quora:
-    - "https?://(www\\.)?quora\\.com/profile/[a-zA-Z0-9_\\-]+/?"
-
+  facebook:  
+    - "https?://(www\\.)?facebook\\.com/profile\\.php\\?id=[0-9]+/?"  
+    - "https?://(www\\.)?facebook\\.com/[a-zA-Z0-9_\\-\\.]+/?"  
+    - "https?://(www\\.)?fb\\.com/[a-zA-Z0-9_\\-\\.]+/?"  
+  twitter:  
+    - "https?://(www\\.)?twitter\\.com/[a-zA-Z0-9_\\-]+/?"  
+    - "https?://(www\\.)?x\\.com/[a-zA-Z0-9_\\-]+/?"  
+  linkedin:  
+    - "https?://(www\\.)?linkedin\\.com/in/[a-zA-Z0-9_\\-]+/?"  
+    - "https?://(www\\.)?linkedin\\.com/company/[a-zA-Z0-9_\\-]+/?"  
+    - "https?://(www\\.)?linkedin\\.com/school/[a-zA-Z0-9_\\-]+/?"  
+  instagram:  
+    - "https?://(www\\.)?instagram\\.com/[a-zA-Z0-9_\\-\\.]+/?"  
+  youtube:  
+    - "https?://(www\\.)?youtube\\.com/[a-zA-Z0-9_\\-]+/?"  
+    - "https?://(www\\.)?youtube\\.com/c/[a-zA-Z0-9_\\-]+/?"  
+    - "https?://(www\\.)?youtube\\.com/@[a-zA-Z0-9_\\-]+/?"  
+  pinterest:  
+    - "https?://(www\\.)?pinterest\\.com/[a-zA-Z0-9_\\-]+/?"  
+    - "https?://in\\.pinterest\\.com/[a-zA-Z0-9_\\-]+/?"  
+  tiktok:  
+    - "https?://(www\\.)?tiktok\\.com/@[a-zA-Z0-9_\\-\\.]+/?"  
+  reddit:  
+    - "https?://(www\\.)?reddit\\.com/user/[a-zA-Z0-9_\\-]+/?"  
+    - "https?://(www\\.)?reddit\\.com/r/[a-zA-Z0-9_\\-]+/?"  
+  snapchat:  
+    - "https?://(www\\.)?snapchat\\.com/add/[a-zA-Z0-9_\\-\\.]+/?"  
+  tumblr:  
+    - "https?://(www\\.)?[a-zA-Z0-9_\\-]+\\.tumblr\\.com/?"  
+  medium:  
+    - "https?://(www\\.)?medium\\.com/@[a-zA-Z0-9_\\-\\.]+/?"  
+  github:  
+    - "https?://(www\\.)?github\\.com/[a-zA-Z0-9_\\-\\.]+/?"  
+  flickr:  
+    - "https?://(www\\.)?flickr\\.com/photos/[a-zA-Z0-9_\\-]+/?"  
+  vk:  
+    - "https?://(www\\.)?vk\\.com/[a-zA-Z0-9_\\-]+/?"  
+  vimeo:  
+    - "https?://(www\\.)?vimeo\\.com/[a-zA-Z0-9_\\-]+/?"  
+  dailymotion:  
+    - "https?://(www\\.)?dailymotion\\.com/[a-zA-Z0-9_\\-]+/?"  
+  quora:  
+    - "https?://(www\\.)?quora\\.com/profile/[a-zA-Z0-9_\\-]+/?"  
+```
 # License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
